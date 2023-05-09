@@ -44,11 +44,34 @@ const highestCount = (array) => {
   }
   return contador;
 };
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
-
-// retornar a quantidade de vezes que o maior número se repete dentro do array.
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+
+const calcTriangleArea = (base, height) => {
+  let areaTriangulo = (base * height) / 2;
+  return areaTriangulo;
+};
+
+const calcRectangleArea = (base, height) => {
+  let areaRetangulo = base * height;
+  return areaRetangulo;
+};
+
+const calcAllAreas = (base, height, form) => {
+  if (form === 'triângulo') {
+    return `O valor da área do triângulo é de: ${calcTriangleArea(
+      base,
+      height
+    )}`;
+  } else if (form === 'retângulo') {
+    return `O valor da área do retângulo é de: ${calcRectangleArea(
+      base,
+      height
+    )}`;
+  } else {
+    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+  }
+};
 
 // Desafio 7 - Crie a função catAndMouse
 
