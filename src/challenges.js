@@ -15,7 +15,7 @@ const splitSentence = (string) => string.split(' ');
 
 const concatName = (array) => {
   const primeiroEultimo = [];
-  for (index = 0; index <= array.length; index += 1) {
+  for (let index = 0; index <= array.length; index += 1) {
     if (index === 0 || index === array.length - 1) {
       primeiroEultimo.unshift(array[index]);
     }
@@ -25,9 +25,28 @@ const concatName = (array) => {
 
 // Desafio 4 - Crie a função footballPoints
 
-const footballPoints = (wins, ties) => (wins * 3) + ties;
+const footballPoints = (wins, ties) => wins * 3 + ties;
 
 // Desafio 5 - Crie a função highestCount
+
+const highestCount = (array) => {
+  let maiorNumero = array[0];
+  let contador = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > maiorNumero) {
+      maiorNumero = array[index];
+    }
+  }
+  for (let index1 = 0; index1 < array.length; index1 += 1) {
+    if (array[index1] === maiorNumero) {
+      contador += 1;
+    }
+  }
+  return contador;
+};
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+
+// retornar a quantidade de vezes que o maior número se repete dentro do array.
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
