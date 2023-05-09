@@ -22,9 +22,10 @@ const concatName = (array) => {
   }
   return primeiroEultimo.join(', ');
 };
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 4 - Crie a função footballPoints
+
+const footballPoints = (wins, ties) => (wins * 3) + ties;
 
 // Desafio 5 - Crie a função highestCount
 
