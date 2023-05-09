@@ -13,6 +13,17 @@ const splitSentence = (string) => string.split(' ');
 
 // Desafio 3 - Crie a função concatName
 
+const concatName = (array) => {
+  const primeiroEultimo = [];
+  for (index = 0; index <= array.length; index += 1) {
+    if (index === 0 || index === array.length - 1) {
+      primeiroEultimo.unshift(array[index]);
+    }
+  }
+  return primeiroEultimo.join(', ');
+};
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
