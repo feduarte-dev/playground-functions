@@ -81,6 +81,19 @@ const triangleCheck = (lineA, lineB, lineC) => {
 };
 // Desafio 13 - Crie a função hydrate
 
+const hydrate = (string) => {
+  const arrayBebidas = string.match(/[0-9]+/g);
+  let contador = 0;
+  for (let index = 0; index < arrayBebidas.length; index += 1) {
+    contador += Number(arrayBebidas[index]);
+  }
+  if (contador === 1) {
+    return `${contador} copo de água`;
+  } else {
+    return `${contador} copos de água`;
+  }
+};
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
