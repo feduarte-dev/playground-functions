@@ -87,16 +87,57 @@ const catAndMouse = (mouse, cat1, cat2) => {
 // Desafio 8 - Crie a função fizzBuzz
 
 const fizzBuzz = (array) => {
-  for (let index = 0; index < array.length; index +=1) {
-    if (array[index]%3===0 && array[index]%5===0) {array[index]='fizzBuzz'}
-    else if (array[index]%3===0) {array[index]='fizz'}
-    else if (array[index]%5===0) {array[index]='buzz'}
-   else {array[index]='bug!'}}
-return array
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      array[index] = 'fizzBuzz';
+    } else if (array[index] % 3 === 0) {
+      array[index] = 'fizz';
+    } else if (array[index] % 5 === 0) {
+      array[index] = 'buzz';
+    } else {
+      array[index] = 'bug!';
+    }
+  }
+  return array;
 };
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9 - Crie a função encode e a função decode
+
+const encode = (string) => {
+  let array = string.split('');
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === 'a') {
+      array[index] = 1;
+    } else if (array[index] === 'e') {
+      array[index] = 2;
+    } else if (array[index] === 'i') {
+      array[index] = 3;
+    } else if (array[index] === 'o') {
+      array[index] = 4;
+    } else if (array[index] === 'u') {
+      array[index] = 5;
+    }
+  }
+  return array.join('');
+};
+
+const decode = (string) => {
+  let array = string.split('');
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === '1') {
+      array[index] = 'a';
+    } else if (array[index] === '2') {
+      array[index] = 'e';
+    } else if (array[index] === '3') {
+      array[index] = 'i';
+    } else if (array[index] === '4') {
+      array[index] = 'o';
+    } else if (array[index] === '5') {
+      array[index] = 'u';
+    }
+  }
+  return array.join('');
+};
 
 // Desafio 10 - Crie a função techList
 
