@@ -1,8 +1,0 @@
-const primeiroTeste = (lineA, lineB, lineC) => {
-  if (
-    lineA > lineB + lineC ||
-    lineB > lineC + lineA ||
-    lineC > lineA + lineB ||
-  ) return false
-  
-};
