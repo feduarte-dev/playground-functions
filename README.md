@@ -38,7 +38,7 @@ This project was designed to exercise my logic with a few challenges, such as ca
    npm install
    ```
 
-4. Right click index.html and open it with live server
+4. Call functions inside /src/challenges*
 
 ## Contributions
 
