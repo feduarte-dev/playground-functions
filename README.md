@@ -1,10 +1,49 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# README: Playground Functions
+
+<img src="assets/playground-functions.png" alt="page" title="page" width=100%>
+
+<br/>
+
+## Project Description
+
+This project was designed to exercise my logic with a few challenges, such as calculating triangle areas, modifying strings, and implementing the classic Fizz Buzz problem.
+
+### Technologies
+
+- LINUX
+- VSCODE
+- JAVASCRIPT
+
+### What I Learned
+
+- Javascript methods such as unshift, join and Math.abs
+
+## How to Run the Project
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/feduarte-dev/playground-functions
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd your-repository
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Right click index.html and open it with live server
+
+## Contributions
+
+[Felipe](https://www.linkedin.com/in/feduarte-dev/) - /src
+
+
+
+[Trybe](https://www.betrybe.com/) - Everything else
